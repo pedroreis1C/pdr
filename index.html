@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você está em uma vila à beira de uma floresta misteriosa. Decide partir em uma jornada para encontrar um tesouro escondido.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você visita a loja de um ferreiro local. Escolhe entre espada ou arco e flecha.</p>
+            <button class="btn-proximo" data-proximo="2">Espada</button>
+            <button class="btn-proximo" data-proximo="3">Arco e Flecha</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você encontra um monstro no caminho. Você usa sua espada para lutar contra ele.</p>
+            <button class="btn-proximo" data-proximo="4">Venceu</button>
+            <button class="btn-proximo" data-proximo="5">Perdeu</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Um arqueiro aparece e oferece ajuda para derrotar monstros a distância</p>
+            <button class="btn-proximo" data-proximo="4">Aceitar ajuda </button>
+            <button class="btn-proximo" data-proximo="6">Recusar ajuda</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você chega ao coração da floresta e encontra um guardião misterioso. Ele pergunta qual é o seu objetivo.</p>
+            <button class="btn-proximo" data-proximo="7">Procurar o tesouro</button>
+            <button class="btn-proximo" data-proximo="8">Desistir da jornada</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>O monstro é mais forte que você, e você cai derrotado. Fim da jornada.</p>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Sem a ajuda do arqueiro, você enfrenta uma série de armadilhas e inimigos. Você precisa passar por uma ponte perigosa.</p>
+            <button class="btn-proximo" data-proximo="9">Conseguir passar</button>
+            <button class="btn-proximo" data-proximo="5">Falhar e cair</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>O guardião lhe revela o segredo do tesouro, que está em uma caverna secreta atrás de uma cachoeira.</p>
+            <button class="btn-proximo" data-proximo="10">Entrar na caverna</button>
+            <button class="btn-proximo" data-proximo="11">Desistir do tesouro </button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você decide voltar para a vila sem o tesouro, mas com muitas histórias para contar. Fim da jornada.</p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você entra na caverna, mas o tesouro está guardado por um enigma mágico.</p>
+            <button class="btn-proximo" data-proximo="11">Resolver o enigma</button>
+            <button class="btn-proximo" data-proximo="5">Tentar roubar o tesouro sem resolver</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você resolve o enigma e encontra o tesouro escondido, uma relíquia dourada.</p>
+            <button class="btn-proximo" data-proximo="11">Levar o tesouro para casa</button>
+            <button class="btn-proximo" data-proximo="8">Deixar o tesouro e voltar</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Você retorna à vila com o tesouro e é recebido como herói. Fim da aventura!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
